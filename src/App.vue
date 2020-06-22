@@ -7,7 +7,7 @@
   <hr>
   <b-container class="bv-example-row">
     <b-row>
-      <b-col sm='6' offset='3'>
+      <b-col md='6' offset='3'>
           <questionBox 
           v-if="questions.length"
           v-bind:currentQuestion='questions[index]'
@@ -75,5 +75,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+@media (max-width: 768PX) {
+  .offset-3 {
+  margin-left: 0 !important
+}
 }
 </style>

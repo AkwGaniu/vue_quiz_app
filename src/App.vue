@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-  <Header 
+  <Header
     v-bind:totalAnswered="totalAnswered"
     v-bind:totalCorrect="totalCorrect" 
-
-    />
+  />
   <hr>
   <b-container class="bv-example-row">
     <b-row>
@@ -48,7 +47,6 @@ export default {
         this.index++
       } else {
         alert('That is all for now')
-
       }
 
     },
